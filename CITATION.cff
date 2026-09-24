@@ -15,7 +15,6 @@ authors:
     given-names: "Ericka Yolanda"
 repository-code: "https://github.com/Julians30/INIAP-Dry-Bean-Morphometric-Classification"
 url: "https://github.com/Julians30/INIAP-Dry-Bean-Morphometric-Classification"
-license: "NOASSERTION"
 preferred-citation:
   type: article
   title: "Comparative Evaluation of Dimensionality Reduction, Machine Learning, and Deep Tabular Models for Morphometric Classification of INIAP Dry Bean Cultivars"
