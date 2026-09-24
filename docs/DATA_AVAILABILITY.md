@@ -34,3 +34,7 @@ The repository is designed to provide:
 - reproducibility documentation.
 
 This separation allows the computational procedure to be audited without publicly redistributing restricted source data.
+
+## License boundary
+
+The repository's MIT License applies to the software, notebooks, documentation, and other computational materials distributed through this repository. It does not grant rights to the original morphometric dataset, raw photographs, or raw acquisition metadata because those materials are not distributed here.
