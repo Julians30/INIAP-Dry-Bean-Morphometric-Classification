@@ -82,9 +82,19 @@ Repeated seeds are repeated evaluations of the same 4,000 physical grains. They 
 
 Core dependencies are listed in [requirements.txt](requirements.txt). Exact package versions used in individual experimental runs are also recorded by the notebooks where available.
 
+## Authors
+
+- Bryan Iván Barahona-Montalván
+- Julián Coronel-Reyes
+- Bryan Orlando Vélez-San Martin
+- Dara Castro-Chancay
+- Ericka Yolanda Tacuri Armijos
+
+See [AUTHORS.md](AUTHORS.md) for the manuscript author order.
+
 ## Citation
 
-A machine-readable `CITATION.cff` file will be added after the final manuscript author list and bibliographic metadata are confirmed.
+Machine-readable citation metadata are provided in [CITATION.cff](CITATION.cff). GitHub can use this file to display the repository's **Cite this repository** option.
 
 ## License
 
