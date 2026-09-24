@@ -80,7 +80,11 @@ Repeated seeds are repeated evaluations of the same 4,000 physical grains. They 
 
 ## Software
 
-Core dependencies are listed in [requirements.txt](requirements.txt). Exact package versions used in individual experimental runs are also recorded by the notebooks where available.
+Core dependencies are listed in [requirements.txt](requirements.txt).
+
+## Computational environment
+
+The captured versions from the completed experimental workflow are documented in [environment/ENVIRONMENT.md](environment/ENVIRONMENT.md), with a machine-readable snapshot in [environment/exact_versions.json](environment/exact_versions.json).
 
 ## Authors
 
@@ -98,4 +102,6 @@ Machine-readable citation metadata are provided in [CITATION.cff](CITATION.cff).
 
 ## License
 
-A repository license will be added after the final code/data-sharing license is confirmed. Until then, no license is implied.
+The software, notebooks, documentation, and computational materials in this repository are released under the [MIT License](LICENSE).
+
+The original morphometric dataset and raw grain photographs are **not distributed in this repository** and are therefore not licensed under the MIT License. Their availability remains governed by the conditions described in [docs/DATA_AVAILABILITY.md](docs/DATA_AVAILABILITY.md).
