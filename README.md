@@ -34,23 +34,28 @@ The study evaluates classical machine-learning models, dimensionality-reduction 
 ```text
 .
 ├── README.md
-├── .gitignore
+├── AUTHORS.md
+├── CITATION.cff
+├── LICENSE
 ├── requirements.txt
+├── environment/
+│   ├── ENVIRONMENT.md
+│   └── exact_versions.json
 ├── notebooks/
-│   └── README.md
 ├── results/
-│   └── README.md
 ├── figures/
-│   └── README.md
+│   └── final_publication/
 ├── tables/
-│   └── README.md
+│   └── analysis_summaries/
 └── docs/
     ├── DATA_AVAILABILITY.md
+    ├── SOFTWARE_AVAILABILITY.md
     ├── REPRODUCIBILITY.md
-    └── VALIDATION_PROTOCOL.md
+    ├── VALIDATION_PROTOCOL.md
+    └── REPOSITORY_MAP.md
 ```
 
-The analysis notebooks and selected derived outputs are added only after they have been audited for obsolete versions, embedded credentials, raw-data leakage, and manuscript consistency.
+The public notebooks are the audited final versions; obsolete, archived, temporary, and housekeeping versions are excluded. Notebook outputs and personal Colab execution metadata were removed before public release, while the scientific code and markdown workflow were preserved.
 
 ## Data availability
 
