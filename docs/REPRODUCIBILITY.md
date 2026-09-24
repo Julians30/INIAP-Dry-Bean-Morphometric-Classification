@@ -4,6 +4,10 @@
 
 The original analysis was developed and executed in **Google Colab** with Google Drive used for persistent project storage. GPU acceleration is useful for the deep-tabular and TabPFN stages.
 
+## Captured environment
+
+The software versions preserved from the completed workflow are documented in [../environment/ENVIRONMENT.md](../environment/ENVIRONMENT.md) and [../environment/exact_versions.json](../environment/exact_versions.json).
+
 ## Recommended notebook order
 
 Only the audited/final notebook version for each stage should be used.
