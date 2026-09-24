@@ -1,5 +1,18 @@
 # Tables
 
-This directory contains publication tables and compact machine-readable summaries derived from the analysis.
+This directory contains compact machine-readable summaries derived from the analysis.
 
-No table in this directory should contain the original row-level morphometric dataset.
+## Analysis summaries
+
+The `analysis_summaries/` folder includes:
+
+- baseline-model summary;
+- hybrid-model summary;
+- deep-tabular-model summary;
+- all-model summary;
+- feature-redundancy ablation summary;
+- FULL_11 model ranking;
+- manuscript calibration summary;
+- manuscript selective-prediction key coverages.
+
+These files support manuscript tables and reported numerical results without redistributing the original row-level morphometric dataset.
