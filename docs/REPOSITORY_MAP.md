@@ -3,6 +3,9 @@
 ```text
 INIAP-Dry-Bean-Morphometric-Classification/
 ├── README.md
+├── AUTHORS.md
+├── CITATION.cff
+├── LICENSE
 ├── requirements.txt
 ├── .gitignore
 │
@@ -22,6 +25,10 @@ INIAP-Dry-Bean-Morphometric-Classification/
 │   ├── NB12_Top2_Confusion_and_Learning_Curves_FIXED.ipynb
 │   ├── NB13_Final_Publication_Figure_Polish.ipynb
 │   └── NB99_Package_All_Results_UPDATED.ipynb
+│
+├── environment/
+│   ├── ENVIRONMENT.md
+│   └── exact_versions.json
 │
 ├── results/
 │   ├── README.md
