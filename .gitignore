@@ -1,0 +1,47 @@
+# Raw and restricted data
+data/
+raw_data/
+original_data/
+*.xlsx
+*.xls
+
+# Raw images
+raw_images/
+images_raw/
+
+# Secrets and credentials
+.env
+.env.*
+*token*
+*secret*
+*.pem
+*.key
+
+# Model checkpoints / large binary model files
+*.safetensors
+*.ckpt
+*.pth
+*.pt
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+
+# Jupyter / Colab temporary files
+*.tmp
+*.temp
+*_TEMP.ipynb
+*OLD_DO_NOT_RUN*
+*ARCHIVE*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local output bundles
+*.zip
