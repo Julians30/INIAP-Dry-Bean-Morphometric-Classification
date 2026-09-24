@@ -38,3 +38,7 @@ This separation allows the computational procedure to be audited without publicl
 ## License boundary
 
 The repository's MIT License applies to the software, notebooks, documentation, and other computational materials distributed through this repository. It does not grant rights to the original morphometric dataset, raw photographs, or raw acquisition metadata because those materials are not distributed here.
+
+## Manuscript-ready Data Availability Statement
+
+> The analysis code, audited notebooks, selected derived results, statistical outputs, and publication figures supporting this study are publicly available at https://github.com/Julians30/INIAP-Dry-Bean-Morphometric-Classification under the MIT License. The original morphometric dataset and raw grain photographs are not publicly redistributed; they may be made available by the corresponding author upon reasonable request and subject to the applicable authorization conditions.
