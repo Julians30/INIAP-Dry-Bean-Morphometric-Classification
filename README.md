@@ -59,9 +59,15 @@ The public notebooks are the audited final versions; obsolete, archived, tempora
 
 ## Data availability
 
-The original morphometric dataset and raw grain photographs are **not distributed in this repository**. The dataset may be made available to qualified researchers upon reasonable request to the corresponding author, subject to the applicable authorization conditions.
+The tabular morphometric dataset analyzed in the study is **not publicly deposited and is not included in this repository**. It may be made available by the corresponding author upon reasonable request, subject to prior authorization and the applicable conditions governing its use.
+
+The source grain images and associated materials related to image acquisition and external-contour generation are also **not included in this repository**. They form part of a separate ongoing doctoral research component, fall outside the scope of the present article, and are not available for redistribution through this article.
 
 See [docs/DATA_AVAILABILITY.md](docs/DATA_AVAILABILITY.md).
+
+## Supplementary materials
+
+The manuscript does not include supplementary materials. This GitHub repository is a standalone public reproducibility resource cited in the Data Availability Statement and is not a supplementary-files package.
 
 ## Reproducibility
 
@@ -109,4 +115,4 @@ Machine-readable citation metadata are provided in [CITATION.cff](CITATION.cff).
 
 The software, notebooks, documentation, and computational materials in this repository are released under the [MIT License](LICENSE).
 
-The original morphometric dataset and raw grain photographs are **not distributed in this repository** and are therefore not licensed under the MIT License. Their availability remains governed by the conditions described in [docs/DATA_AVAILABILITY.md](docs/DATA_AVAILABILITY.md).
+The original morphometric dataset and source grain images are **not distributed in this repository** and are therefore not licensed under the MIT License. Their availability remains governed by the conditions described in [docs/DATA_AVAILABILITY.md](docs/DATA_AVAILABILITY.md).
