@@ -2,7 +2,7 @@
 
 Reproducibility repository for the manuscript:
 
-**Reliable AI-Based Morphometric Classification of INIAP Dry Bean Cultivars: TabPFN, Calibration, Selective Prediction, and Redundancy Ablation**
+**Reliable Morphometric Classification of INIAP Dry Bean Cultivars Using Artificial Intelligence: TabPFN, Calibration, Selective Prediction, and Redundancy Ablation**
 
 ## Overview
 
