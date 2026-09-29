@@ -21,7 +21,9 @@ For public release, notebook outputs and Colab execution metadata were removed. 
 11. `NB10_Publication_Quality_Figures_MDPI_FINAL_R13.ipynb`
 12. `NB12_Top2_Confusion_and_Learning_Curves_FIXED.ipynb`
 13. `NB13_Final_Publication_Figure_Polish.ipynb`
-14. `NB99_Package_All_Results_UPDATED.ipynb`
+14. `NB14_Final_PCA_LDA_Calibration_Publication.ipynb`
+15. `NB15_Calibration_Gap_Figure_Publication.ipynb`
+16. `NB99_Package_All_Results_UPDATED.ipynb`
 
 Notebook 11 was a local cleanup utility and is intentionally omitted from the scientific workflow.
 
