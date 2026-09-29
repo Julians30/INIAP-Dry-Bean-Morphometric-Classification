@@ -27,6 +27,8 @@ Only the audited/final notebook version for each stage should be used.
 | 10 | `NB10_Publication_Quality_Figures_MDPI_FINAL_R13.ipynb` | Main publication figures |
 | 12 | `NB12_Top2_Confusion_and_Learning_Curves_FIXED.ipynb` | Final TabPFN/LDA-XGBoost confusion matrices and learning curves |
 | 13 | `NB13_Final_Publication_Figure_Polish.ipynb` | Final figure-only polish; no model retraining |
+| 14 | `NB14_Final_PCA_LDA_Calibration_Publication.ipynb` | Combined PCA/LDA descriptive projection and calibration summaries from saved OOF predictions; no model retraining |
+| 15 | `NB15_Calibration_Gap_Figure_Publication.ipynb` | Final 2×2 calibration-gap visualization from NB14 outputs; no model retraining |
 | 99 | `NB99_Package_All_Results_UPDATED.ipynb` | Packaging/audit of final outputs |
 
 Notebook 11 was a local housekeeping/cleanup utility and is intentionally not part of the scientific execution chain.
@@ -51,4 +53,4 @@ Long-running stages write checkpoints so an interrupted Colab session can resume
 
 ## Final-figure workflow
 
-NB13 regenerates the final publication versions of Figures 1, 4, and 8 from already-computed data/results and does not retrain TabPFN.
+NB13 regenerates selected polished publication figures from already-computed data/results. NB14 adds the final combined PCA/LDA descriptive projection and calibration summaries, and NB15 generates the final calibration-gap visualization. NB14 and NB15 do not retrain the benchmark classifiers.
