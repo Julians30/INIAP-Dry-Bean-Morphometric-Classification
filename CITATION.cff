@@ -18,7 +18,7 @@ license: "MIT"
 url: "https://github.com/Julians30/INIAP-Dry-Bean-Morphometric-Classification"
 preferred-citation:
   type: article
-  title: "Reliable AI-Based Morphometric Classification of INIAP Dry Bean Cultivars: TabPFN, Calibration, Selective Prediction, and Redundancy Ablation"
+  title: "Reliable Morphometric Classification of INIAP Dry Bean Cultivars Using Artificial Intelligence: TabPFN, Calibration, Selective Prediction, and Redundancy Ablation"
   authors:
     - family-names: "Barahona-Montalván"
       given-names: "Bryan Iván"
