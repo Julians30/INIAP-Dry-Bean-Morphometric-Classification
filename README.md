@@ -2,7 +2,7 @@
 
 Reproducibility repository for the manuscript:
 
-**Comparative Evaluation of Dimensionality Reduction, Machine Learning, and Deep Tabular Models for Morphometric Classification of INIAP Dry Bean Cultivars**
+**Reliable AI-Based Morphometric Classification of INIAP Dry Bean Cultivars: TabPFN, Calibration, Selective Prediction, and Redundancy Ablation**
 
 ## Overview
 
@@ -20,7 +20,7 @@ The study evaluates classical machine-learning models, dimensionality-reduction 
 - **Repeated outer evaluation:** 3 seeds (2026, 2027, 2028) × 5 outer folds.
 - **Inner model selection:** 3 inner folds where applicable.
 - **Primary performance metric:** macro-F1.
-- **Additional analyses:** calibration, equivalence testing, corrected inference, selective prediction, redundancy ablation, and learning curves.
+- **Additional analyses:** calibration, equivalence testing, corrected inference, selective prediction, redundancy ablation, PCA/LDA descriptive projections, calibration-gap visualization, and learning curves.
 
 ## Cultivars
 
@@ -81,7 +81,7 @@ Using the full 11-descriptor representation:
 - **LDA-XGBoost:** mean macro-F1 = **0.9797**
 - **LDA-SVM:** mean macro-F1 = **0.9792**
 
-TabPFN also achieved a Brier score of **0.0206** and a 10-bin expected calibration error (ECE) of **0.0023**.
+TabPFN also achieved a Brier score of **0.0206** and a 10-bin expected calibration error (ECE) of **0.0023**. The final visualization workflow includes the combined PCA/LDA projection and the 2×2 calibration-gap figure used in the submission-ready manuscript.
 
 These values are reported as study results; the original observations required to rerun the complete analysis are subject to the data-availability conditions above.
 
