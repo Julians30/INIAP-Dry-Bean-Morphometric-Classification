@@ -25,7 +25,7 @@ Software versions from the completed workflow are documented in [../environment/
 | 10 | `NB10_Publication_Quality_Figures_MDPI_FINAL_R13.ipynb` | Publication-quality benchmark figures |
 | 12 | `NB12_Top2_Confusion_and_Learning_Curves_FIXED.ipynb` | TabPFN/LDA-XGBoost confusion matrices and learning curves |
 | 13 | `NB13_Final_Publication_Figure_Polish.ipynb` | Figure-only polish |
-| 14 | `NB14_Final_PCA_LDA_Calibration_Publication.ipynb` | Combined PCA/LDA descriptive projection; its older calibration helper outputs are superseded by NB16 |
+| 14 | `NB14_Final_PCA_LDA_Publication.ipynb` | Combined PCA/LDA descriptive projection |
 | 16 | `NB16_Strict_Calibration_Selective_Prediction.ipynb` | Final strict outer-training-only calibration, adaptive ECE, NLL/Brier CIs, AURC, Clopper-Pearson intervals, selective prediction, rejected-set composition, and TabPFN/LDA-XGBoost ROC comparison |
 | 17 | `NB17_STRICT6_Descriptive_Sensitivity.ipynb` | STRICT_6 sensitivity analysis and cultivar-wise descriptive morphometry |
 | 99 | `NB99_Package_All_Results_UPDATED.ipynb` | Packaging/audit of derived outputs; use together with final NB16/NB17 exports |
