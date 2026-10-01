@@ -30,7 +30,7 @@ Software versions from the completed workflow are documented in [../environment/
 | 17 | `NB17_STRICT6_Descriptive_Sensitivity.ipynb` | STRICT_6 sensitivity analysis and cultivar-wise descriptive morphometry |
 | 99 | `NB99_Package_All_Results_UPDATED.ipynb` | Packaging/audit of derived outputs; use together with final NB16/NB17 exports |
 
-Notebook 11 was a housekeeping utility and is not part of the scientific workflow. NB15 generated an earlier fixed-width calibration-gap visualization and is **superseded by NB16**; it is not part of the final manuscript workflow.
+Notebook 11 was a housekeeping utility and is not part of the scientific workflow.
 
 ## Dataset placement
 
