@@ -59,9 +59,6 @@ INIAP-Dry-Bean-Morphometric-Classification/
     └── REPOSITORY_MAP.md
 ```
 
-## Superseded workflow elements
-
-NB15 and the earlier fixed-width calibration-gap visualization were superseded by the strict outer-training-only calibration workflow in NB16 and are not part of the final manuscript analysis.
 
 ## Excluded by design
 
