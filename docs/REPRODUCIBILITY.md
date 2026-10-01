@@ -51,6 +51,8 @@ For each outer-test fold:
 
 Therefore, the evaluated outer-test fold does not contribute labels or predictions to estimation of its own temperature or rejection threshold.
 
+For computational efficiency and exact continuity with the primary benchmark, NB16 reuses the already saved leakage-safe outer-test OOF probabilities from the completed benchmark. It does **not** use those outer-test predictions to estimate calibration parameters. New calibration probabilities are generated separately through three-fold internal OOF prediction inside each outer-training partition, and only those internal predictions are used to fit the temperature and confidence threshold.
+
 ## STRICT_6
 
 NB17 defines the strict six-descriptor representation by removing `EquivDiameter` from REDUCED_7 because `EquivDiameter = sqrt(4*Area/pi)`. STRICT_6 is an additional sensitivity analysis and does not replace the prespecified FULL_11 versus REDUCED_7 comparison.
