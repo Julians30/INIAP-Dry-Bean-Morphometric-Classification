@@ -75,7 +75,7 @@ See [docs/DATA_AVAILABILITY.md](docs/DATA_AVAILABILITY.md).
 
 ## Supplementary materials
 
-The revised manuscript includes supplementary tables supporting the descriptive morphometry, complete nonparametric effect-size analysis, STRICT_6 sensitivity analysis, strict calibration, high-confidence calibration diagnostics, selective prediction, equivalence testing, and additional model metrics. Machine-readable counterparts are organized under `tables/supplementary/`.
+The manuscript includes supplementary tables supporting the descriptive morphometry, complete nonparametric effect-size analysis, STRICT_6 sensitivity analysis, strict calibration, high-confidence calibration diagnostics, selective prediction, equivalence testing, and additional model metrics. Machine-readable counterparts are organized under `tables/supplementary/`.
 
 ## Main reported results
 
