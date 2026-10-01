@@ -19,7 +19,7 @@ Notebook outputs, authentication tokens, personal Colab metadata, temporary file
 11. `NB10_Publication_Quality_Figures_MDPI_FINAL_R13.ipynb`
 12. `NB12_Top2_Confusion_and_Learning_Curves_FIXED.ipynb`
 13. `NB13_Final_Publication_Figure_Polish.ipynb`
-14. `NB14_Final_PCA_LDA_Calibration_Publication.ipynb` — retained for the combined PCA/LDA descriptive figure; older calibration helper outputs are superseded.
+14. `NB14_Final_PCA_LDA_Publication.ipynb` — combined PCA/LDA descriptive figure.
 15. `NB16_Strict_Calibration_Selective_Prediction.ipynb` — final strict calibration and selective-prediction audit.
 16. `NB17_STRICT6_Descriptive_Sensitivity.ipynb` — STRICT_6 sensitivity and cultivar-wise descriptive statistics.
 17. `NB99_Package_All_Results_UPDATED.ipynb` — packaging/audit support.
