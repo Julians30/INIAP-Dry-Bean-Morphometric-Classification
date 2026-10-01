@@ -20,7 +20,7 @@ INIAP-Dry-Bean-Morphometric-Classification/
 │   ├── NB06_Statistical_Comparison_Interpretability_FIXED.ipynb
 │   ├── NB07_ROC_Learning_Curves.ipynb
 │   ├── NB08_Extended_Baselines_Redundancy_Ablation.ipynb
-│   ├── NB09_Statistical_Robustness_Calibration_Selective_R2.ipynb
+│   ├── NB09_Statistical_Robustness_Equivalence.ipynb
 │   ├── NB10_Publication_Quality_Figures_MDPI_FINAL_R13.ipynb
 │   ├── NB12_Top2_Confusion_and_Learning_Curves_FIXED.ipynb
 │   ├── NB13_Final_Publication_Figure_Polish.ipynb
