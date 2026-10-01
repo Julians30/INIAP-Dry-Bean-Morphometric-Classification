@@ -9,4 +9,4 @@ xgboost
 catboost
 torch
 pytorch-tabnet
-tabpfn
+tabpfn==9.0.0
