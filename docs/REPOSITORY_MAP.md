@@ -25,7 +25,8 @@ INIAP-Dry-Bean-Morphometric-Classification/
 │   ├── NB12_Top2_Confusion_and_Learning_Curves_FIXED.ipynb
 │   ├── NB13_Final_Publication_Figure_Polish.ipynb
 │   ├── NB14_Final_PCA_LDA_Calibration_Publication.ipynb
-│   ├── NB15_Calibration_Gap_Figure_Publication.ipynb
+│   ├── NB16_Strict_Calibration_Selective_Reviewer_Audit.ipynb
+│   ├── NB17_STRICT6_Descriptive_Reviewer_Audit.ipynb
 │   └── NB99_Package_All_Results_UPDATED.ipynb
 │
 ├── environment/
@@ -44,38 +45,34 @@ INIAP-Dry-Bean-Morphometric-Classification/
 ├── figures/
 │   ├── README.md
 │   └── final_publication/
-│       ├── Figure1_...svg
-│       ├── Figure2_...svg
-│       ├── Figure3_...svg
-│       ├── Figure4_...svg
-│       ├── Figure5_...svg
-│       ├── Figure6_...svg
-│       ├── Figure7_...svg
-│       └── Figure8_...svg
 │
 ├── tables/
 │   ├── README.md
-│   └── analysis_summaries/
+│   ├── analysis_summaries/
+│   └── supplementary/
 │
 └── docs/
     ├── DATA_AVAILABILITY.md
+    ├── SOFTWARE_AVAILABILITY.md
     ├── REPRODUCIBILITY.md
     ├── VALIDATION_PROTOCOL.md
     └── REPOSITORY_MAP.md
 ```
 
+## Superseded workflow elements
+
+NB15 and the earlier fixed-width calibration-gap visualization were superseded by the strict outer-training-only calibration workflow in NB16 and are not part of the final manuscript analysis.
+
 ## Excluded by design
 
 The public repository does not contain:
 
-- `INIAP_Dataset.xlsx` or any other raw morphometric data file;
-- raw grain photographs;
-- raw image-acquisition metadata;
-- TabPFN access credentials;
-- pretrained model checkpoints;
-- Colab user identifiers or execution outputs;
-- obsolete `OLD_DO_NOT_RUN`, archived, or temporary notebooks.
+- the original morphometric dataset;
+- private TabPFN access credentials;
+- pretrained model checkpoint files;
+- Colab user identifiers;
+- obsolete temporary notebooks or intermediate execution artifacts.
 
 ## Public-release principle
 
-The repository separates **source data** from **computational reproducibility materials**. Code, validation design, selected derived outputs, statistical summaries, and final figures are public; restricted source observations remain subject to the manuscript's data-availability statement.
+The repository separates restricted source observations from public computational reproducibility materials. Code, validation design, derived outputs, statistical summaries, final figures, and machine-readable supplementary tables are public; the morphometric source dataset remains subject to the manuscript's Data Availability Statement.
