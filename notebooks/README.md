@@ -15,7 +15,7 @@ Notebook outputs, authentication tokens, personal Colab metadata, temporary file
 7. `NB06_Statistical_Comparison_Interpretability_FIXED.ipynb`
 8. `NB07_ROC_Learning_Curves.ipynb`
 9. `NB08_Extended_Baselines_Redundancy_Ablation.ipynb`
-10. `NB09_Statistical_Robustness_Calibration_Selective_R2.ipynb`
+10. `NB09_Statistical_Robustness_Equivalence.ipynb`
 11. `NB10_Publication_Quality_Figures_MDPI_FINAL_R13.ipynb`
 12. `NB12_Top2_Confusion_and_Learning_Curves_FIXED.ipynb`
 13. `NB13_Final_Publication_Figure_Polish.ipynb`
