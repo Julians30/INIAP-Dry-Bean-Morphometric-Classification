@@ -6,21 +6,23 @@ Reproducibility repository for the manuscript:
 
 ## Overview
 
-This repository contains the computational workflow, analysis notebooks, derived results, publication figures, tables, and reproducibility documentation for morphometric classification of four certified INIAP dry bean cultivars.
+This repository contains the computational workflow, audited analysis notebooks, derived results, publication figures, tables, and reproducibility documentation for morphometric classification of four certified INIAP dry bean cultivars.
 
-The study evaluates classical machine-learning models, dimensionality-reduction pipelines, deep tabular models, and pretrained TabPFN under leakage-safe repeated nested stratified cross-validation.
+The study compares classical machine learning models, PCA- and LDA-based pipelines, deep tabular models, and pretrained TabPFN under repeated nested stratified cross-validation. The final reliability analysis additionally uses strict outer-training-only calibration and selective prediction.
 
 ## Study design
 
 - **Biological unit:** one individual dry bean grain per row.
 - **Sample size:** 4,000 grains.
 - **Cultivars:** four INIAP dry bean cultivars, 1,000 grains per cultivar.
-- **Primary representation:** 11 image-derived morphometric descriptors (`FULL_11`).
-- **Redundancy analysis:** reduced seven-descriptor representation (`REDUCED_7`).
+- **Primary representation:** 11 morphometric descriptors (`FULL_11`).
+- **Primary redundancy ablation:** seven-descriptor representation (`REDUCED_7`).
+- **Strict redundancy sensitivity analysis:** six-descriptor representation (`STRICT_6`), which additionally removes `EquivDiameter` because it is exactly determined by `Area`.
 - **Repeated outer evaluation:** 3 seeds (2026, 2027, 2028) × 5 outer folds.
 - **Inner model selection:** 3 inner folds where applicable.
-- **Primary performance metric:** macro-F1.
-- **Additional analyses:** calibration, equivalence testing, corrected inference, selective prediction, redundancy ablation, PCA/LDA descriptive projections, calibration-gap visualization, and learning curves.
+- **Primary discrimination metric:** macro-F1.
+- **Probability-quality metrics:** negative log-likelihood (NLL), multiclass Brier score, adaptive expected calibration error (ECE), and area under the risk-coverage curve (AURC).
+- **Selective prediction:** confidence thresholds estimated only from internal OOF predictions generated inside each outer-training partition, with exact Clopper-Pearson intervals for accepted-case accuracy.
 
 ## Cultivars
 
@@ -28,6 +30,19 @@ The study evaluates classical machine-learning models, dimensionality-reduction 
 2. INIAP 425 Blanco Fanesquero
 3. INIAP 481 Rojo del Valle
 4. INIAP 485 Urcuquí
+
+## Feature representations
+
+### FULL_11
+`Area`, `Perimeter`, `MajorAxisLength`, `MinorAxisLength`, `AspectRatio`, `ConvexArea`, `EquivDiameter`, `Extent`, `Solidity`, `roundness`, and `Compactness`.
+
+### REDUCED_7
+`Area`, `Perimeter`, `MajorAxisLength`, `MinorAxisLength`, `ConvexArea`, `EquivDiameter`, and `Extent`.
+
+### STRICT_6
+`Area`, `Perimeter`, `MajorAxisLength`, `MinorAxisLength`, `ConvexArea`, and `Extent`.
+
+`STRICT_6` is an additional sensitivity analysis. It does not replace the prespecified FULL_11 versus REDUCED_7 ablation.
 
 ## Repository organization
 
@@ -39,80 +54,77 @@ The study evaluates classical machine-learning models, dimensionality-reduction 
 ├── LICENSE
 ├── requirements.txt
 ├── environment/
-│   ├── ENVIRONMENT.md
-│   └── exact_versions.json
 ├── notebooks/
 ├── results/
 ├── figures/
-│   └── final_publication/
 ├── tables/
-│   └── analysis_summaries/
+│   ├── analysis_summaries/
+│   └── supplementary/
 └── docs/
-    ├── DATA_AVAILABILITY.md
-    ├── SOFTWARE_AVAILABILITY.md
-    ├── REPRODUCIBILITY.md
-    ├── VALIDATION_PROTOCOL.md
-    └── REPOSITORY_MAP.md
 ```
 
-The public notebooks are the audited final versions; obsolete, archived, temporary, and housekeeping versions are excluded. Notebook outputs and personal Colab execution metadata were removed before public release, while the scientific code and markdown workflow were preserved.
+Notebook outputs and personal Colab execution metadata are excluded from the public notebook copies. Scientific code, analysis logic, validation structure, and machine-readable derived summaries are retained.
 
 ## Data availability
 
-The tabular morphometric dataset analyzed in the study is **not publicly deposited and is not included in this repository**. It may be made available by the corresponding author upon reasonable request, subject to prior authorization and the applicable conditions governing its use.
+The morphometric dataset analyzed in this study is not publicly deposited and is not included in this repository. It may be made available by the corresponding author upon reasonable request, subject to prior authorization and the applicable conditions governing its use.
 
-The source grain images and associated materials related to image acquisition and external-contour generation are also **not included in this repository**. They form part of a separate ongoing doctoral research component, fall outside the scope of the present article, and are not available for redistribution through this article.
+The source code, notebooks, experimental configurations, derived numerical results, tables, figures, and reproducibility documentation are publicly available in this repository.
 
 See [docs/DATA_AVAILABILITY.md](docs/DATA_AVAILABILITY.md).
 
 ## Supplementary materials
 
-The manuscript does not include supplementary materials. This GitHub repository is a standalone public reproducibility resource cited in the Data Availability Statement and is not a supplementary-files package.
-
-## Reproducibility
-
-The notebooks follow the original Google Colab workflow and preserve the study's repeated nested stratified cross-validation design. The recommended execution sequence and expected outputs are documented in [docs/REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md).
+The revised manuscript includes supplementary tables supporting the descriptive morphometry, complete nonparametric effect-size analysis, STRICT_6 sensitivity analysis, strict calibration, high-confidence calibration diagnostics, selective prediction, equivalence testing, and additional model metrics. Machine-readable counterparts are organized under `tables/supplementary/`.
 
 ## Main reported results
 
-Using the full 11-descriptor representation:
+Using the FULL_11 representation:
 
 - **TabPFN:** mean macro-F1 = **0.9866**
 - **LDA-XGBoost:** mean macro-F1 = **0.9797**
 - **LDA-SVM:** mean macro-F1 = **0.9792**
+- **Logistic regression:** mean macro-F1 = **0.9754**
+- **SVM-RBF:** mean macro-F1 = **0.9760**
 
-TabPFN also achieved a Brier score of **0.0206** and a 10-bin expected calibration error (ECE) of **0.0023**. The final visualization workflow includes the combined PCA/LDA projection and the 2×2 calibration-gap figure used in the submission-ready manuscript.
+Using STRICT_6:
 
-These values are reported as study results; the original observations required to rerun the complete analysis are subject to the data-availability conditions above.
+- **TabPFN:** mean macro-F1 = **0.9854**
+- **LDA-XGBoost:** mean macro-F1 = **0.9796**
 
-## Important reproducibility note
+Under strict outer-training-only calibration, TabPFN achieved:
 
-Repeated seeds are repeated evaluations of the same 4,000 physical grains. They are **not** treated as independent biological observations. Outer-test predictions are kept strictly separate from model selection and training.
+- **NLL:** 0.03536 (95% CI: 0.02809–0.04301)
+- **Multiclass Brier score:** 0.02063 (95% CI: 0.01619–0.02573)
+- **Adaptive equal-mass ECE:** 0.00068
+- **AURC:** 0.000395
 
-## Software
+At the nominal 90% selective-prediction operating point, mean realized coverage was approximately 0.906 and accepted-case accuracy was approximately 0.9994. At the nominal 80% operating point, no accepted errors occurred in any of the three seeds; exact Clopper-Pearson intervals are reported in the manuscript and public summary tables.
 
-Core dependencies are listed in [requirements.txt](requirements.txt).
+## Important reproducibility notes
 
-## Computational environment
+1. Repeated seeds are repeated evaluations of the same 4,000 physical grains; they are **not** additional independent biological observations.
+2. All model selection and fitted preprocessing are restricted to outer-training data.
+3. In the final strict calibration analysis, temperature and rejection thresholds for an outer-test fold are estimated only from internal OOF predictions generated within that fold's outer-training partition.
+4. TabPFN model weights are not redistributed in this repository. Access to the pretrained model is subject to Prior Labs authentication and licensing conditions.
 
-The captured versions from the completed experimental workflow are documented in [environment/ENVIRONMENT.md](environment/ENVIRONMENT.md), with a machine-readable snapshot in [environment/exact_versions.json](environment/exact_versions.json).
+## Software and environment
+
+Core dependencies are listed in [requirements.txt](requirements.txt). The captured computational environment is documented under [environment/](environment/).
 
 ## Authors
 
 - Bryan Iván Barahona-Montalván
 - Julián Coronel-Reyes
-- Bryan Orlando Vélez-San Martin
-- Dara Castro-Chancay
-- Ericka Yolanda Tacuri Armijos
+- Bryan Orlando Vélez-SanMartín
+- Ericka Yolanda Tacuri-Armijos
 
 See [AUTHORS.md](AUTHORS.md) for the manuscript author order.
 
 ## Citation
 
-Machine-readable citation metadata are provided in [CITATION.cff](CITATION.cff). GitHub can use this file to display the repository's **Cite this repository** option.
+Machine-readable citation metadata are provided in [CITATION.cff](CITATION.cff).
 
 ## License
 
-The software, notebooks, documentation, and computational materials in this repository are released under the [MIT License](LICENSE).
-
-The original morphometric dataset and source grain images are **not distributed in this repository** and are therefore not licensed under the MIT License. Their availability remains governed by the conditions described in [docs/DATA_AVAILABILITY.md](docs/DATA_AVAILABILITY.md).
+The software, notebooks, documentation, and computational materials in this repository are released under the [MIT License](LICENSE). The original morphometric dataset is not distributed in this repository and is therefore not licensed under the MIT License.
