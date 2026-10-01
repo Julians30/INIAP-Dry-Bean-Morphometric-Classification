@@ -1,6 +1,6 @@
 # Software Availability
 
-The computational materials supporting the manuscript are publicly available in this repository:
+The computational materials supporting the manuscript are publicly available in this repository.
 
 **Repository:** https://github.com/Julians30/INIAP-Dry-Bean-Morphometric-Classification
 
@@ -9,20 +9,18 @@ The computational materials supporting the manuscript are publicly available in 
 Public materials include:
 
 - source code and audited analysis notebooks;
-- experimental, validation, and modeling configurations;
-- derived numerical model-performance results;
-- statistical-test outputs;
-- calibration and selective-prediction summaries;
+- repeated nested validation and model-selection configurations;
+- FULL_11, REDUCED_7, and STRICT_6 analysis definitions;
+- derived model-performance results;
+- corrected inferential and equivalence-test outputs;
+- strict outer-training-only calibration outputs;
+- selective-prediction summaries, exact confidence intervals, and rejected-set composition;
 - publication tables and figures;
-- machine-readable analysis summaries;
+- machine-readable supplementary summaries;
 - reproducibility and environment documentation.
 
-The original morphometric dataset, source grain images, upstream image-acquisition and external-contour-generation materials, private TabPFN credentials, and pretrained checkpoint files are not distributed through the repository.
+The original morphometric dataset, private credentials, and pretrained TabPFN checkpoint files are not distributed through the repository.
 
-The manuscript does not include supplementary materials; this repository is a standalone reproducibility resource referenced in the Data Availability Statement.
+TabPFN access is subject to the applicable Prior Labs authentication and licensing conditions. No authentication token is stored in the notebooks or repository.
 
-## Manuscript-ready software statement
-
-> The source code, analysis notebooks, experimental configurations, derived numerical results, tables, figures, and other reproducibility materials required to reproduce the reported computational analyses with the tabular morphometric data are openly available under the MIT License at https://github.com/Julians30/INIAP-Dry-Bean-Morphometric-Classification.
-
-See [DATA_AVAILABILITY.md](DATA_AVAILABILITY.md) for the source-data and source-image availability conditions.
+See [DATA_AVAILABILITY.md](DATA_AVAILABILITY.md) for data-access conditions.
