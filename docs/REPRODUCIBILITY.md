@@ -26,8 +26,8 @@ Software versions from the completed workflow are documented in [../environment/
 | 12 | `NB12_Top2_Confusion_and_Learning_Curves_FIXED.ipynb` | TabPFN/LDA-XGBoost confusion matrices and learning curves |
 | 13 | `NB13_Final_Publication_Figure_Polish.ipynb` | Figure-only polish |
 | 14 | `NB14_Final_PCA_LDA_Calibration_Publication.ipynb` | Combined PCA/LDA descriptive projection; its older calibration helper outputs are superseded by NB16 |
-| 16 | `NB16_Strict_Calibration_Selective_Reviewer_Audit.ipynb` | Final strict outer-training-only calibration, adaptive ECE, NLL/Brier CIs, AURC, Clopper-Pearson intervals, selective prediction, rejected-set composition, and TabPFN/LDA-XGBoost ROC comparison |
-| 17 | `NB17_STRICT6_Descriptive_Reviewer_Audit.ipynb` | STRICT_6 sensitivity analysis and cultivar-wise descriptive morphometry |
+| 16 | `NB16_Strict_Calibration_Selective_Prediction.ipynb` | Final strict outer-training-only calibration, adaptive ECE, NLL/Brier CIs, AURC, Clopper-Pearson intervals, selective prediction, rejected-set composition, and TabPFN/LDA-XGBoost ROC comparison |
+| 17 | `NB17_STRICT6_Descriptive_Sensitivity.ipynb` | STRICT_6 sensitivity analysis and cultivar-wise descriptive morphometry |
 | 99 | `NB99_Package_All_Results_UPDATED.ipynb` | Packaging/audit of derived outputs; use together with final NB16/NB17 exports |
 
 Notebook 11 was a housekeeping utility and is not part of the scientific workflow. NB15 generated an earlier fixed-width calibration-gap visualization and is **superseded by NB16**; it is not part of the final manuscript workflow.
