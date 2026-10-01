@@ -14,6 +14,4 @@ This directory contains the publication figures and figure-generation outputs al
 8. **Figure 8 — Strict accuracy-coverage:** selective-prediction curves using thresholds estimated only within each outer-training partition.
 9. **Figure 9 — Learning curves:** TabPFN and LDA-XGBoost diagnostic learning curves.
 
-The earlier fixed-width calibration-gap visualization was superseded by the strict NB16 calibration analysis and is not part of the final manuscript figure set.
-
 Vector SVG files are provided where the final source figure is vector-based; high-resolution PNG is retained for figures exported from the final NB14/NB16 workflows. Captions are maintained in the manuscript.
