@@ -21,7 +21,7 @@ Software versions from the completed workflow are documented in [../environment/
 | 06 | `NB06_Statistical_Comparison_Interpretability_FIXED.ipynb` | Statistical comparison and interpretation |
 | 07 | `NB07_ROC_Learning_Curves.ipynb` | ROC analysis and diagnostic learning curves |
 | 08 | `NB08_Extended_Baselines_Redundancy_Ablation.ipynb` | Extended baselines, FULL_11 vs REDUCED_7, TabPFN |
-| 09 | `NB09_Statistical_Robustness_Calibration_Selective_R2.ipynb` | Corrected inference, equivalence, and preliminary probability analyses |
+| 09 | `NB09_Statistical_Robustness_Equivalence.ipynb` | Corrected inference and equivalence sensitivity |
 | 10 | `NB10_Publication_Quality_Figures_MDPI_FINAL_R13.ipynb` | Publication-quality benchmark figures |
 | 12 | `NB12_Top2_Confusion_and_Learning_Curves_FIXED.ipynb` | TabPFN/LDA-XGBoost confusion matrices and learning curves |
 | 13 | `NB13_Final_Publication_Figure_Polish.ipynb` | Figure-only polish |
