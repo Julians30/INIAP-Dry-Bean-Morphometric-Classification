@@ -33,4 +33,4 @@ GPU-oriented deep-tabular and TabPFN stages were executed with CUDA available; t
 
 ## Data boundary
 
-The original morphometric dataset and raw images are not covered by the repository's MIT software license because they are not distributed in this repository. See `docs/DATA_AVAILABILITY.md`.
+The original morphometric dataset is not covered by the repository's MIT software license because it is not distributed in this repository. See `docs/DATA_AVAILABILITY.md`.
