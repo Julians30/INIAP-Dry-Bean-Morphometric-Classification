@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="860" viewBox="0 0 1600 860">
+<defs>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L10,5 L0,10 z" fill="#1f4e79"/>
+  </marker>
+  <style>
+    .box{fill:#ffffff;stroke:#111;stroke-width:2}
+    .title{font:700 25px Arial,sans-serif;fill:#111;text-anchor:middle}
+    .body{font:20px Arial,sans-serif;fill:#222;text-anchor:middle}
+    .small{font:18px Arial,sans-serif;fill:#222;text-anchor:middle}
+    .line{stroke:#1f4e79;stroke-width:2.3;fill:none;marker-end:url(#arrow)}
+  </style>
+</defs>
+<rect width="1600" height="860" fill="white"/>
+<!-- top -->
+<rect class="box" x="280" y="35" rx="10" ry="10" width="1040" height="110"/>
+<text class="title" x="800" y="80">Morphometric classification dataset</text>
+<text class="body" x="800" y="118">4,000 individual grains · 4 INIAP cultivars · 11 quantitative descriptors</text>
+<!-- row 2 -->
+<rect class="box" x="35" y="205" rx="10" ry="10" width="475" height="145"/>
+<text class="title" x="272" y="250">Morphometric representation</text>
+<text class="small" x="272" y="292">FULL_11 primary representation</text>
+<text class="small" x="272" y="320">REDUCED_7 redundancy ablation</text>
+<text class="small" x="272" y="348">STRICT_6 strict sensitivity analysis</text>
+
+<rect class="box" x="562" y="205" rx="10" ry="10" width="475" height="145"/>
+<text class="title" x="800" y="250">Repeated nested validation</text>
+<text class="small" x="800" y="296">3 seeds × 5 outer folds</text>
+<text class="small" x="800" y="328">3 inner folds for model selection</text>
+
+<rect class="box" x="1090" y="205" rx="10" ry="10" width="475" height="145"/>
+<text class="title" x="1327" y="250">AI and ML model families</text>
+<text class="small" x="1327" y="296">Direct classifiers · PCA/LDA hybrids</text>
+<text class="small" x="1327" y="328">Deep tabular models · TabPFN</text>
+
+<!-- row 3 -->
+<rect class="box" x="280" y="445" rx="10" ry="10" width="1040" height="110"/>
+<text class="title" x="800" y="490">Outer-fold out-of-fold predictions</text>
+<text class="body" x="800" y="530">One aligned prediction per grain, model, seed, and representation</text>
+
+<!-- row 4 -->
+<rect class="box" x="35" y="665" rx="10" ry="10" width="475" height="145"/>
+<text class="title" x="272" y="710">Predictive performance</text>
+<text class="small" x="272" y="752">Macro-F1 · accuracy · balanced accuracy</text>
+<text class="small" x="272" y="780">ROC and class-specific diagnostics</text>
+<text class="small" x="272" y="808">FULL_11 · REDUCED_7 · STRICT_6</text>
+
+<rect class="box" x="562" y="665" rx="10" ry="10" width="475" height="145"/>
+<text class="title" x="800" y="710">Robustness and redundancy</text>
+<text class="small" x="800" y="752">Paired bootstrap · McNemar · corrected inference</text>
+<text class="small" x="800" y="780">TOST equivalence · deterministic redundancy</text>
+<text class="small" x="800" y="808">STRICT_6 sensitivity analysis</text>
+
+<rect class="box" x="1090" y="665" rx="10" ry="10" width="475" height="145"/>
+<text class="title" x="1327" y="710">Reliability and decision support</text>
+<text class="small" x="1327" y="748">NLL · Brier · adaptive ECE · AURC</text>
+<text class="small" x="1327" y="778">Selective prediction · Clopper–Pearson intervals</text>
+<text class="small" x="1327" y="808">Rejected-set composition · learning curves</text>
+
+<!-- arrows: stop at borders -->
+<path class="line" d="M800 145 L272 205"/>
+<path class="line" d="M800 145 L800 205"/>
+<path class="line" d="M800 145 L1327 205"/>
+<path class="line" d="M272 350 L650 445"/>
+<path class="line" d="M800 350 L800 445"/>
+<path class="line" d="M1327 350 L950 445"/>
+<path class="line" d="M800 555 L272 665"/>
+<path class="line" d="M800 555 L800 665"/>
+<path class="line" d="M800 555 L1327 665"/>
+</svg>
