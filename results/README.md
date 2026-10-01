@@ -1,14 +1,16 @@
 # Results
 
-This directory contains selected **derived outputs** required to audit the results reported in the manuscript.
+This directory contains selected derived outputs required to audit the results reported in the manuscript.
 
 ## Contents
 
-- `model_performance/` — harmonized fold-level model metrics.
-- `redundancy/` — FULL_11 versus REDUCED_7 ablation outputs and selected parameters.
-- `calibration/` — raw and temperature-scaled probability metrics.
-- `selective_prediction/` — confidence-based coverage/accuracy results.
+- `model_performance/` — harmonized fold-level discrimination metrics.
+- `redundancy/` — FULL_11 versus REDUCED_7 outputs plus STRICT_6 sensitivity results.
+- `calibration/` — final strict outer-training-only calibration metrics and confidence-interval summaries.
+- `selective_prediction/` — strict selective-prediction counts, exact accuracy intervals, and rejected-set cultivar composition.
 - `learning_curves/` — final TabPFN and LDA-XGBoost learning-curve summaries.
 - `statistical_tests/` — corrected repeated-CV tests, equivalence sensitivity, paired bootstrap, and McNemar outputs.
 
-The original morphometric observations are not included. Large intermediate checkpoints and redundant artifacts are deliberately excluded.
+The older cross-fold temperature-scaling summaries and their fixed-width calibration visualization were superseded by NB16 and have been removed from the current public result set.
+
+The original morphometric observations are not included. Large intermediate checkpoints are deliberately excluded.
