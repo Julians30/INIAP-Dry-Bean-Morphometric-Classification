@@ -11,6 +11,4 @@ This directory contains selected derived outputs required to audit the results r
 - `learning_curves/` — final TabPFN and LDA-XGBoost learning-curve summaries.
 - `statistical_tests/` — corrected repeated-CV tests, equivalence sensitivity, paired bootstrap, and McNemar outputs.
 
-The older cross-fold temperature-scaling summaries and their fixed-width calibration visualization were superseded by NB16 and have been removed from the current public result set.
-
 The original morphometric observations are not included. Large intermediate checkpoints are deliberately excluded.
