@@ -25,8 +25,8 @@ INIAP-Dry-Bean-Morphometric-Classification/
 │   ├── NB12_Top2_Confusion_and_Learning_Curves_FIXED.ipynb
 │   ├── NB13_Final_Publication_Figure_Polish.ipynb
 │   ├── NB14_Final_PCA_LDA_Calibration_Publication.ipynb
-│   ├── NB16_Strict_Calibration_Selective_Reviewer_Audit.ipynb
-│   ├── NB17_STRICT6_Descriptive_Reviewer_Audit.ipynb
+│   ├── NB16_Strict_Calibration_Selective_Prediction.ipynb
+│   ├── NB17_STRICT6_Descriptive_Sensitivity.ipynb
 │   └── NB99_Package_All_Results_UPDATED.ipynb
 │
 ├── environment/
