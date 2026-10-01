@@ -26,10 +26,10 @@ The study compares classical machine learning models, PCA- and LDA-based pipelin
 
 ## Cultivars
 
-1. INIAP 420 Canario del Chota
-2. INIAP 425 Blanco Fanesquero
-3. INIAP 481 Rojo del Valle
-4. INIAP 485 Urcuquí
+1. INIAP 420 
+2. INIAP 425 
+3. INIAP 481 
+4. INIAP 485 
 
 ## Feature representations
 
