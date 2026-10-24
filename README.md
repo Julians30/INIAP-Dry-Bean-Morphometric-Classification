@@ -79,13 +79,17 @@ The manuscript includes supplementary tables supporting the descriptive morphome
 
 ## Main reported results
 
-Using the FULL_11 representation:
+Top-ranked models using the FULL_11 representation (mean macro-F1 over 3 seeds × 5 outer folds):
 
-- **TabPFN:** mean macro-F1 = **0.9866**
-- **LDA-XGBoost:** mean macro-F1 = **0.9797**
-- **LDA-SVM:** mean macro-F1 = **0.9792**
-- **Logistic regression:** mean macro-F1 = **0.9754**
-- **SVM-RBF:** mean macro-F1 = **0.9760**
+| Rank | Model | Mean macro-F1 |
+|---:|---|---:|
+| 1 | TabPFN | **0.9866** |
+| 2 | LDA-XGBoost | 0.9797 |
+| 3 | LDA-SVM | 0.9792 |
+| 4 | PCA-XGBoost | 0.9775 |
+| 5 | LDA | 0.9764 |
+
+The complete ranking of all evaluated models is provided in [`tables/analysis_summaries/full11_model_ranking.csv`](tables/analysis_summaries/full11_model_ranking.csv).
 
 Using STRICT_6:
 
