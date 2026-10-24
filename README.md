@@ -1,8 +1,27 @@
+<div align="center">
+
 # INIAP Dry Bean Morphometric Classification
 
-Reproducibility repository for the manuscript:
+Reproducibility repository for the manuscript
 
 **Reliable Morphometric Classification of INIAP Dry Bean Cultivars Using Artificial Intelligence: TabPFN, Calibration, Selective Prediction, and Redundancy Ablation**
+
+[![Status](https://img.shields.io/badge/Status-Under%20review-2E6DA4?style=flat-square)](#citation)
+[![Journal](https://img.shields.io/badge/Journal-AgriEngineering%20%28MDPI%29-1F3A5F?style=flat-square)](https://www.mdpi.com/journal/agriengineering)
+[![License: MIT](https://img.shields.io/badge/License-MIT-2F855A?style=flat-square)](LICENSE)
+[![Citation](https://img.shields.io/badge/Cite-CITATION.cff-6B7280?style=flat-square)](CITATION.cff)
+
+![Python](https://img.shields.io/badge/Python-3.13-3776AB?style=flat-square&logo=python&logoColor=white)
+![TabPFN](https://img.shields.io/badge/TabPFN-9.0.0-111827?style=flat-square)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-1.6.1-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-3.4.1-189FDD?style=flat-square)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.11-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![Validation](https://img.shields.io/badge/Repeated%20nested%20CV-3%20seeds%20%C3%97%205%20folds-6B7280?style=flat-square)
+![Data](https://img.shields.io/badge/Data-Available%20on%20request-6B7280?style=flat-square)
+
+</div>
+
+---
 
 ## Overview
 

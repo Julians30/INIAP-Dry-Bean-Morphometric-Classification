@@ -25,6 +25,10 @@ Notebook outputs, authentication tokens, personal Colab metadata, temporary file
 17. `NB99_Package_All_Results_UPDATED.ipynb` — packaging/audit support.
 
 
+## Notebook numbering
+
+Notebook numbers follow the chronological order of the audited workflow. Numbers 11 and 15 are not part of the public sequence; the listed notebooks are sufficient to regenerate every reported result. Suffixes such as `_FIXED`, `_UPDATED` and `_FINAL_R13` identify the audited version used for the manuscript; files are kept under their original names so that the outputs in `results/`, `tables/` and `figures/` remain traceable to the notebook that produced them.
+
 ## TabPFN access
 
 NB16 and NB17 do not store authentication credentials. A valid Prior Labs token must be supplied securely at runtime when TabPFN requires model access.
