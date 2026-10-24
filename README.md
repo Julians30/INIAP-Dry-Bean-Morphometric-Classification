@@ -120,7 +120,7 @@ Core dependencies are listed in [requirements.txt](requirements.txt). The captur
 
 - Bryan Iván Barahona-Montalván
 - Julián Coronel-Reyes
-- Bryan Orlando Vélez-SanMartín
+- Bryan Orlando Vélez San Martín
 - Ericka Yolanda Tacuri-Armijos
 
 See [AUTHORS.md](AUTHORS.md) for the manuscript author order.

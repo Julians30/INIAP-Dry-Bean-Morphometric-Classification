@@ -8,7 +8,7 @@ The repository accompanies the manuscript:
 
 1. **Bryan Iván Barahona-Montalván**
 2. **Julián Coronel-Reyes**
-3. **Bryan Orlando Vélez-SanMartín**
+3. **Bryan Orlando Vélez San Martín**
 4. **Ericka Yolanda Tacuri-Armijos**
 
 The author order above follows the current manuscript author list.
