@@ -1,0 +1,17 @@
+model,best_config,n_folds
+FTTransformer_tuned,2,4
+FTTransformer_tuned,8,2
+FTTransformer_tuned,9,2
+FTTransformer_tuned,5,1
+FTTransformer_tuned,3,1
+FTTransformer_tuned,11,1
+FTTransformer_tuned,1,1
+FTTransformer_tuned,7,1
+FTTransformer_tuned,6,1
+FTTransformer_tuned,4,1
+TabNet_tuned,11,4
+TabNet_tuned,0,3
+TabNet_tuned,2,2
+TabNet_tuned,1,2
+TabNet_tuned,3,2
+TabNet_tuned,10,2

@@ -11,4 +11,6 @@ This directory contains selected derived outputs required to audit the results r
 - `learning_curves/` — final TabPFN and LDA-XGBoost learning-curve summaries.
 - `statistical_tests/` — corrected repeated-CV tests, equivalence sensitivity, paired bootstrap, and McNemar outputs.
 
+Outputs of the analyses added during peer review are in [`../revision/results/`](../revision/results/).
+
 The original morphometric observations are not included. Large intermediate checkpoints are deliberately excluded.

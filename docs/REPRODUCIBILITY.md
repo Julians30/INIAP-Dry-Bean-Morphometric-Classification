@@ -61,9 +61,53 @@ NB17 defines the strict six-descriptor representation by removing `EquivDiameter
 
 Because the source dataset is not publicly redistributed, public users can audit the code, experimental design, derived outputs, figures, statistical workflow, and calibration logic but cannot rerun the entire study without authorized access to the source data.
 
+## Exact fold generation
+
+All models, including the revision analyses, use identical partitions generated with scikit-learn 1.6.1:
+
+```python
+from sklearn.model_selection import StratifiedKFold
+for seed in (2026, 2027, 2028):
+    outer = StratifiedKFold(n_splits=5, shuffle=True, random_state=seed)
+    for fold, (tr, te) in enumerate(outer.split(X, y), start=1):
+        inner = StratifiedKFold(n_splits=3, shuffle=True, random_state=seed + fold)
+```
+
+Rows are used in the original order of the dataset table, `y` is the label-encoded `Class` column
+(`INIAP 420`, `INIAP 425`, `INIAP 481`, `INIAP 485`), and the column `AspectRation` is renamed `AspectRatio`.
+Inner model selection uses `GridSearchCV(scoring="f1_macro")`. Deep tabular models additionally take a stratified
+15% early-stopping subset from the training part only (`train_test_split(..., test_size=0.15, random_state=seed + fold)`).
+
+## Image acquisition and feature extraction (upstream of this repository)
+
+The morphometric table was produced by an upstream imaging workflow and is the starting point of this repository.
+Certified seed of each cultivar was obtained from INIAP and kept in separate cultivar-labeled bags; 1000 grains per
+cultivar were photographed individually (one grain per image) in 2026 inside a light box with a black background,
+LED illumination and a fixed vertical support (photographic area about 15 × 19 cm; camera about 15 cm above the
+background), using a single Xiaomi Redmi Note 15 smartphone (main rear camera, 3060 × 4080 pixels). Each image was
+converted to grayscale, thresholded with Otsu's method, cleaned with a morphological opening, and segmented by
+contour detection; the 11 descriptors were computed from the grain contour with standard OpenCV geometric
+functions and the derived ratios defined in the manuscript (Section 2.1). All descriptors are in pixel units; no pixel-to-millimetre calibration was applied.
+Seed-lot identifiers, production sites, harvest seasons and per-grain acquisition dates were not recorded.
+
 ## TabPFN
 
 TabPFN requires applicable Prior Labs model access in a fresh runtime. Authentication is provided securely at runtime and must never be committed to the repository. The pretrained checkpoint itself is not redistributed.
+
+Procedure used to obtain a compatible checkpoint:
+
+1. Install the recorded version: `pip install tabpfn==9.0.0` (see `environment/exact_versions.json`).
+2. Create a Prior Labs account and accept the TabPFN model license.
+3. Provide the access token at runtime only (for example, through an environment variable or the Colab secrets
+   manager); never write it into a notebook cell that is saved or committed.
+4. Instantiate `TabPFNClassifier()` with default settings; on first use the package downloads the pretrained
+   checkpoint recorded in the manuscript (`tabpfn-v3.5-20260909.safetensors`). No weights are fine-tuned on the
+   present data.
+
+## Revision analyses (first round of peer review)
+
+The `revision/` directory contains the scripts and outputs added in response to the reviewers
+(see `revision/README.md`).
 
 ## Checkpoints
 

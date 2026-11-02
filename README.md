@@ -79,6 +79,7 @@ The study compares classical machine learning models, PCA- and LDA-based pipelin
 ├── tables/
 │   ├── analysis_summaries/
 │   └── supplementary/
+├── revision/          # analyses added during peer review (Tables S6c, S9–S12)
 └── docs/
 ```
 
@@ -129,7 +130,9 @@ At the nominal 90% selective-prediction operating point, mean realized coverage 
 1. Repeated seeds are repeated evaluations of the same 4,000 physical grains; they are **not** additional independent biological observations.
 2. All model selection and fitted preprocessing are restricted to outer-training data.
 3. In the final strict calibration analysis, temperature and rejection thresholds for an outer-test fold are estimated only from internal OOF predictions generated within that fold's outer-training partition.
-4. TabPFN model weights are not redistributed in this repository. Access to the pretrained model is subject to Prior Labs authentication and licensing conditions.
+4. TabPFN model weights are not redistributed in this repository. Access to the pretrained model is subject to Prior Labs authentication and licensing conditions; the procedure for obtaining the recorded checkpoint is described in [docs/REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md).
+5. All grains of each cultivar come from a single certified INIAP seed source; seed lots, production sites, and harvest seasons were not recorded. The results therefore describe within-dataset discrimination, not performance on new seed lots.
+6. Exact fold generation (outer and inner seeds) and the upstream image-acquisition and feature-extraction procedure are documented in [docs/REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md). Analyses added during peer review are in [revision/](revision/README.md).
 
 ## Software and environment
 
