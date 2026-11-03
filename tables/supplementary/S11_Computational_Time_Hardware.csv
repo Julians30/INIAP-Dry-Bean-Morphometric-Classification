@@ -1,0 +1,11 @@
+model,environment,fit_search_seconds,ms_per_1000_grains_proba,source
+LDA,Google Colab,0.0086342175801594,2.2836923599242502,benchmark notebooks (Table S8 timing fields)
+LDA_Shrinkage,Google Colab,0.0122618675231933,2.24343935648595,benchmark notebooks (Table S8 timing fields)
+QDA,Google Colab,0.2168923219045003,2.903799215952484,benchmark notebooks (Table S8 timing fields)
+KNN,Google Colab,0.3729265530904133,19.0872152646382,benchmark notebooks (Table S8 timing fields)
+TabPFN,"Google Colab, NVIDIA L4 GPU (CUDA)",2.6183374722798667,1739.8205399513245,benchmark notebooks (Table S8 timing fields)
+CatBoost,Google Colab,15.169022528330483,2.027014891306492,benchmark notebooks (Table S8 timing fields)
+RandomForest,Google Colab,15.494373242060345,52.71289745966588,benchmark notebooks (Table S8 timing fields)
+LDA-XGBoost,"two-core Intel Xeon CPU (2.8 GHz), no GPU",0.5749631940000199,15.716814374968637,revision timing run (revision/scripts/cpu_timing.py)
+LDA,"two-core Intel Xeon CPU (2.8 GHz), no GPU",0.004986572000007,0.5451481250418055,revision timing run (revision/scripts/cpu_timing.py)
+Logistic regression,"two-core Intel Xeon CPU (2.8 GHz), no GPU",0.0636526109999522,0.7710281251149809,revision timing run (revision/scripts/cpu_timing.py)

@@ -9,6 +9,7 @@ it is available from the corresponding author upon reasonable request.
 | `scripts/analyses.py` | `results/T_hybrid_vs_direct_corrected.csv`, `T_tabpfn_rank_stability.csv`, `T_review_burden_by_cultivar.csv`, `T_rejected_errors_summary.csv`, `T_simple_baselines_*.csv`, `T_timing.csv` | Sections 3.2, 3.3, 3.5; Tables S6c, S9, S10, S11 |
 | `scripts/cpu_timing.py` | `results/T_cpu_timing_local.csv` | Section 4.2; Table S11 |
 | `scripts/deep_tuning.py` | `results/deep_tabular_tuning/{tabnet,ft}_tuned_{outer,inner}.csv`, `*_configurations.json` | Section 2.6; Tables S12a–S12b |
+| `scripts/regenerate_figures_1_3.py` | `figures/final_publication/Figure1–3_*.png` | Figures 1–3 |
 | `scripts/compare_deep.py` | `results/deep_tabular_tuning/T_deep_tuned_*.csv` | Sections 3.2, 4.2; Table S12a |
 
 ## Usage
