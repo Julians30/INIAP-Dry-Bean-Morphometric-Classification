@@ -15,3 +15,11 @@ This directory contains the publication figures and figure-generation outputs al
 9. **Figure 9 — Learning curves:** TabPFN and LDA-XGBoost diagnostic learning curves.
 
 Vector SVG files are provided where the final source figure is vector-based; high-resolution PNG is retained for figures exported from the final NB14/NB16 workflows. Captions are maintained in the manuscript.
+
+## Revision (first round of peer review)
+
+Figures 1, 2, 3, 6, 7, and 8 were updated for the revised manuscript. Figures 1–3 were regenerated at 600 dpi with
+[`revision/scripts/regenerate_figures_1_3.py`](../revision/scripts/regenerate_figures_1_3.py) (Figure 1 adds the
+revision analyses; Figure 2 uses the true minus sign; values are unchanged). Panel labels (A, B) were added to Figure 6,
+and in Figures 7 and 8 the in-figure titles were removed and the colours harmonized with Figure 4 (TabPFN orange,
+LDA-XGBoost blue); the plotted values are unchanged. Figures 1 and 2 are now provided as 600 dpi PNG files.
