@@ -4,7 +4,7 @@
 
 Reproducibility repository for the manuscript
 
-**Reliable Morphometric Classification of INIAP Dry Bean Cultivars Using Artificial Intelligence: TabPFN, Calibration, Selective Prediction, and Redundancy Ablation**
+**Reliability-Oriented Morphometric Classification of INIAP Dry Bean Cultivars Using Artificial Intelligence: TabPFN, Calibration, Selective Prediction, and Redundancy Ablation**
 
 [![Status](https://img.shields.io/badge/Status-Under%20review-2E6DA4?style=flat-square)](#citation)
 [![Journal](https://img.shields.io/badge/Journal-AgriEngineering%20%28MDPI%29-1F3A5F?style=flat-square)](https://www.mdpi.com/journal/agriengineering)
@@ -85,6 +85,18 @@ The study compares classical machine learning models, PCA- and LDA-based pipelin
 
 Notebook outputs and personal Colab execution metadata are excluded from the public notebook copies. Scientific code, analysis logic, validation structure, and machine-readable derived summaries are retained.
 
+## Applicability and study limitations
+
+The observed performance is **within-dataset discrimination**, not a claim of validated performance for new seed lots, operational seed certification, or varietal purity testing.
+
+- **Independent sampling:** each cultivar came from one certified seed source, without independently sampled seed lots or recorded lot identifiers, production sites, or harvest seasons.
+- **Acquisition quality:** per-grain imaging dates, physical-scale (pixel-to-millimeter) calibration, and repeat-imaging quality control were unavailable. Transfer across sessions, devices, scales, or seed lots remains unverified.
+- **Closed-set task:** the model recognizes only the four represented cultivars. It has not been validated to detect unmodeled cultivars, off-type admixtures, or damaged seeds; confidence-based abstention is **not** open-set recognition or a varietal purity test.
+- **Seed-coat color:** these four cultivars have visibly different seed-coat colors, while the model uses morphometry rather than color. The experiment does not establish a practical advantage over simple color-based identification.
+- **Timing and cost:** TabPFN was timed on an NVIDIA L4 GPU and the LDA-based comparators on a CPU. These times are not a controlled cost comparison; hardware, energy, licensing, and maintenance would need a common evaluation.
+
+See [Study Scope and Limitations](docs/STUDY_SCOPE_AND_LIMITATIONS.md) for the external-validation requirements.
+
 ## Data availability
 
 The morphometric dataset analyzed in this study is not publicly deposited and is not included in this repository. It may be made available by the corresponding author upon reasonable request, subject to prior authorization and the applicable conditions governing its use.
@@ -124,6 +136,10 @@ Under strict outer-training-only calibration, TabPFN achieved:
 - **AURC:** 0.000395
 
 At the nominal 90% selective-prediction operating point, mean realized coverage was approximately 0.906 and accepted-case accuracy was approximately 0.9994. At the nominal 80% operating point, no accepted errors occurred in any of the three seeds; exact Clopper-Pearson intervals are reported in the manuscript and public summary tables.
+
+## Simple-feature interpretation
+
+The compact baselines use **input features**, not necessarily independent physical measurements. With logistic regression, **Area + AspectRatio** gave macro-F1 ≈ **0.919** and **MajorAxisLength + MinorAxisLength** ≈ **0.923**; both are two-input-feature representations (Table S9). AspectRatio is itself derived from the two axis lengths. Descriptor ablation does not by itself reduce the physical imaging effort.
 
 ## Important reproducibility notes
 
