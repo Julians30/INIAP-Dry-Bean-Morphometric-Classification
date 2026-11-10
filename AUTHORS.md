@@ -2,7 +2,7 @@
 
 The repository accompanies the manuscript:
 
-**Reliable Morphometric Classification of INIAP Dry Bean Cultivars Using Artificial Intelligence: TabPFN, Calibration, Selective Prediction, and Redundancy Ablation**
+**Reliability-Oriented Morphometric Classification of INIAP Dry Bean Cultivars Using Artificial Intelligence: TabPFN, Calibration, Selective Prediction, and Redundancy Ablation**
 
 ## Author order
 
@@ -34,4 +34,4 @@ CRediT roles aligned with the current four-author manuscript:
 - **Supervision:** B.I.B.-M.
 - **Project administration:** B.I.B.-M.
 
-All authors have read and agreed to the published version of the manuscript.
+The contribution roles above follow the revised manuscript. Publication metadata should be updated after the journal publishes the article.
