@@ -69,3 +69,9 @@ The final probability-quality summaries include NLL, multiclass Brier score, equ
 ## Repeated-seed interpretation
 
 The same 4,000 grains are evaluated under three random seeds. These repeated evaluations are **not** treated as 12,000 independent biological observations.
+
+## External-validity and operational boundary
+
+Although the grain-level folds were constructed without fitting on outer-test grains, this is **not** independent-seed-lot or acquisition-session validation. Each cultivar was obtained from one certified seed source; lot metadata and per-grain acquisition dates were unavailable, and physical-scale calibration and repeat-imaging quality control were not performed. Therefore, reported macro-F1, probability calibration, and selective prediction are established for the analyzed data, not deployment or seed certification.
+
+This is a four-class **closed-set** classifier; it has no validated mechanism for identifying unknown cultivars or off-type admixtures. Confidence-based rejection is not a substitute for open-set detection. See [STUDY_SCOPE_AND_LIMITATIONS.md](STUDY_SCOPE_AND_LIMITATIONS.md) for details and proposed external validation.
