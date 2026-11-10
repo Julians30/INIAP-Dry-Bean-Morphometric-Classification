@@ -112,3 +112,9 @@ The `revision/` directory contains the scripts and outputs added in response to 
 ## Checkpoints
 
 NB16 and NB17 write restart-safe checkpoints so interrupted Colab sessions can resume without repeating completed model-fold combinations.
+
+## Interpretation and deployment boundary
+
+The source feature table has no independent seed-lot identifiers or per-grain acquisition dates. The upstream procedure did not apply pixel-to-millimeter calibration or repeat-imaging quality control, so cross-lot and cross-device performance as well as measurement repeatability remain unverified. The four modeled cultivars are visually different in seed-coat color, while the benchmark uses morphometric descriptors and does not test color-based recognition. The reported classifiers are closed-set and are **not validated** for detecting unknown cultivars, off-type grains, or varietal purity.
+
+The reported inference timing is also not a hardware-matched cost comparison: TabPFN was timed on an NVIDIA L4 GPU, whereas CPU timings were used for the LDA-based pipelines. See [STUDY_SCOPE_AND_LIMITATIONS.md](STUDY_SCOPE_AND_LIMITATIONS.md).
