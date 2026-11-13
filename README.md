@@ -6,7 +6,7 @@ Reproducibility repository for the manuscript
 
 **Reliability-Oriented Morphometric Classification of INIAP Dry Bean Cultivars Using Artificial Intelligence: TabPFN, Calibration, Selective Prediction, and Redundancy Ablation**
 
-[![Status](https://img.shields.io/badge/Status-Under%20review-2E6DA4?style=flat-square)](#citation)
+[![Status](https://img.shields.io/badge/Status-Accepted-2F855A?style=flat-square)](#citation)
 [![Journal](https://img.shields.io/badge/Journal-AgriEngineering%20%28MDPI%29-1F3A5F?style=flat-square)](https://www.mdpi.com/journal/agriengineering)
 [![License: MIT](https://img.shields.io/badge/License-MIT-2F855A?style=flat-square)](LICENSE)
 [![Citation](https://img.shields.io/badge/Cite-CITATION.cff-6B7280?style=flat-square)](CITATION.cff)
@@ -22,6 +22,8 @@ Reproducibility repository for the manuscript
 </div>
 
 ---
+
+**Editorial status (13 November 2026):** Accepted for publication in *AgriEngineering* (MDPI), as reported by the author. Journal DOI, volume and issue have not yet been supplied.
 
 ## Overview
 
