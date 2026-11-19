@@ -2,13 +2,13 @@
 
 The repository accompanies the manuscript:
 
-**Reliability-Oriented Morphometric Classification of INIAP Dry Bean Cultivars Using Artificial Intelligence: TabPFN, Calibration, Selective Prediction, and Redundancy Ablation**
+**Reliable Morphometric Classification of INIAP Dry Bean Cultivars Using Artificial Intelligence: TabPFN, Calibration, Selective Prediction, and Redundancy Ablation**
 
 ## Author order
 
 1. **Bryan Iván Barahona-Montalván**
 2. **Julián Coronel-Reyes**
-3. **Bryan Orlando Vélez-San Martín**
+3. **Bryan Orlando Vélez-SanMartín**
 4. **Ericka Yolanda Tacuri-Armijos**
 
 The author order above follows the current manuscript author list.
